@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HACK VIP APP - Premium Access</title>
+    <meta name="description"
+        content="Download the HACK VIP APP for exclusive premium access. Join the elite community today.">
+    <style>
+        :root {
+            --primary-gold: #d4af37;
+            --secondary-gold: #aa8c2c;
+            --dark-bg: #0a0a0a;
+            --card-bg: #111111;
+            --text-color: #ffffff;
+            --text-muted: #888888;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+        }
+
+        body {
+            background-color: var(--dark-bg);
+            color: var(--text-color);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-image:
+                radial-gradient(circle at 50% 0%, rgba(212, 175, 55, 0.1) 0%, transparent 60%),
+                linear-gradient(to bottom, #0a0a0a 0%, #111111 100%);
+            overflow-x: hidden;
+        }
+
+        .container {
+            max-width: 600px;
+            width: 90%;
+            padding: 2rem;
+            text-align: center;
+            position: relative;
+            z-index: 10;
+        }
+
+        .logo-container {
+            width: 150px;
+            height: 150px;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            padding: 5px;
+            background: linear-gradient(45deg, var(--primary-gold), transparent);
+            box-shadow: 0 0 30px rgba(212, 175, 55, 0.3);
+            animation: pulse-gold 3s infinite ease-in-out;
+            position: relative;
+        }
+
+        .logo-container img {
+            width: 100%;
+            height: 100%;
+            object-fit: contain;
+            /* Maintained to show full logo */
+            border-radius: 50%;
+            background-color: #000;
+            border: 2px solid var(--dark-bg);
+        }
+
+        h1 {
+            font-size: 3rem;
+            font-weight: 800;
+            margin-bottom: 0.5rem;
+            background: linear-gradient(to right, #fff, var(--primary-gold));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            letter-spacing: -1px;
+            text-transform: uppercase;
+        }
+
+        .subtitle {
+            font-size: 1.2rem;
+            color: var(--text-muted);
+            margin-bottom: 3rem;
+            font-weight: 300;
+            letter-spacing: 2px;
+        }
+
+        .download-card {
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 20px;
+            padding: 2rem;
+            backdrop-filter: blur(10px);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .download-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 30px 60px rgba(0, 0, 0, 0.5);
+            border-color: rgba(212, 175, 55, 0.3);
+        }
+
+        .btn-download {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            gap: 12px;
+            background: linear-gradient(45deg, var(--primary-gold), var(--secondary-gold));
+            color: #000;
+            font-weight: 700;
+            font-size: 1.1rem;
+            padding: 18px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 20px rgba(212, 175, 55, 0.3);
+            width: 100%;
+            max-width: 350px;
+            margin-top: 1rem;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn-download:hover {
+            transform: scale(1.05);
+            box-shadow: 0 15px 30px rgba(212, 175, 55, 0.5);
+            filter: brightness(1.1);
+        }
+
+        .version-info {
+            margin-top: 1.5rem;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+            opacity: 0.7;
+        }
+
+        @keyframes pulse-gold {
+            0% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0.4);
+            }
+
+            70% {
+                box-shadow: 0 0 0 20px rgba(212, 175, 55, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(212, 175, 55, 0);
+            }
+        }
+
+        .particles {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            background-image:
+                radial-gradient(2px 2px at 20px 30px, var(--primary-gold) 50%, transparent),
+                radial-gradient(2px 2px at 40px 70px, rgba(255, 255, 255, 0.2) 50%, transparent),
+                radial-gradient(2px 2px at 50px 160px, rgba(255, 255, 255, 0.2) 50%, transparent),
+                radial-gradient(2px 2px at 90px 40px, var(--primary-gold) 50%, transparent),
+                radial-gradient(2px 2px at 130px 80px, rgba(255, 255, 255, 0.2) 50%, transparent);
+            background-repeat: repeat;
+            background-size: 200px 200px;
+            animation: move-particles 60s linear infinite;
+            opacity: 0.3;
+            z-index: 1;
+        }
+
+        @keyframes move-particles {
+            0% {
+                background-position: 0 0;
+            }
+
+            100% {
+                background-position: 100px 100px;
+            }
+        }
+
+        @media (max-width: 480px) {
+            h1 {
+                font-size: 2rem;
+            }
+
+            .container {
+                padding: 1.5rem;
+            }
+
+            .btn-download {
+                padding: 15px 30px;
+                font-size: 1rem;
+            }
+        }
+
+        .gallery-title {
+            font-size: 1.5rem;
+            margin: 3rem 0 1rem;
+            color: var(--primary-gold);
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .gallery-container {
+            display: flex;
+            gap: 15px;
+            overflow-x: auto;
+            padding: 1rem 5px;
+            scroll-behavior: smooth;
+            -webkit-overflow-scrolling: touch;
+            margin-bottom: 2rem;
+            width: 100%;
+        }
+
+        .gallery-container::-webkit-scrollbar {
+            height: 5px;
+        }
+
+        .gallery-container::-webkit-scrollbar-thumb {
+            background: var(--primary-gold);
+            border-radius: 10px;
+        }
+
+        .gallery-item {
+            flex: 0 0 150px;
+            height: 300px;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 2px solid rgba(212, 175, 55, 0.3);
+            transition: transform 0.3s;
+            position: relative;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            border-color: var(--primary-gold);
+            box-shadow: 0 0 20px rgba(212, 175, 55, 0.2);
+        }
+
+        @media (min-width: 600px) {
+            .gallery-item {
+                flex: 0 0 180px;
+                height: 350px;
+            }
+
+            .container {
+                max-width: 800px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="particles"></div>
+
+    <div class="container">
+        <div class="logo-container">
+            <img src="assets/logo.jpg" alt="Hack VIP Logo">
+        </div>
+
+        <h1>HACK VIP</h1>
+        <div class="subtitle">PREMIUM HACKING SUITE</div>
+
+        <h2 class="gallery-title">App Interface</h2>
+        <div class="gallery-container">
+            <div class="gallery-item"><img src="assets/screen1.jpg" alt="App Screen 1"></div>
+            <div class="gallery-item"><img src="assets/screen2.jpg" alt="App Screen 2"></div>
+            <div class="gallery-item"><img src="assets/screen3.jpg" alt="App Screen 3"></div>
+            <div class="gallery-item"><img src="assets/screen4.jpg" alt="App Screen 4"></div>
+        </div>
+
+        <div class="download-card">
+            <p style="color: #ccc; margin-bottom: 1.5rem; line-height: 1.6;">
+                Unlock the ultimate power with our exclusive VIP tools. Secure, fast, and untraceable.
+            </p>
+
+            <a href="https://docs.google.com/uc?export=download&id=1np03xNzF9PhSkRoXsqBaI4IZJ6VdJC8v"
+                class="btn-download" onclick="alert('Download started...');">
+                <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                    stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path>
+                    <polyline points="7 10 12 15 17 10"></polyline>
+                    <line x1="12" y1="15" x2="12" y2="3"></line>
+                </svg>
+                Download App
+            </a>
+
+            <div class="version-info">
+                Version 2.0.4 • Updated Today • 45.2 MB
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
